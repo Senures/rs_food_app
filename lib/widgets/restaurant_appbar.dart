@@ -2,27 +2,32 @@ import 'package:flutter/material.dart';
 
 restaurantAppbar() {
   return AppBar(
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.transparent,
+    elevation: 0.0,
     title: Container(
         alignment: Alignment.center,
-        width: 40.0,
-        height: 40.0,
-        decoration:
-            BoxDecoration(shape: BoxShape.circle, color: Color(0xff9B9B9B)),
-        child: Image.asset("assets/arrow.png")),
-    elevation: 0.0,
+        width: 35.0,
+        height: 35.0,
+        decoration: const BoxDecoration(
+            color: Color(0xff9B9B9B), shape: BoxShape.circle),
+        child: const Icon(
+          Icons.arrow_back_ios_outlined,
+          size: 20.0,
+          color: Colors.white,
+        )),
     actions: [
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Container(
             alignment: Alignment.center,
-            width: 40.0,
-            height: 40.0,
-            decoration:
-                BoxDecoration(shape: BoxShape.circle, color: Color(0xff9B9B9B)),
-            child: Icon(
-              Icons.favorite_border,
-              size: 26.0,
+            width: 35.0,
+            height: 35.0,
+            decoration: const BoxDecoration(
+                color: Color(0xff9B9B9B), shape: BoxShape.circle),
+            child: const Icon(
+              Icons.favorite_border_outlined,
+              size: 20.0,
+              color: Colors.white,
             )),
       ),
     ],
