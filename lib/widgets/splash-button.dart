@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_rs_app/pages/home_screen.dart';
 
 
 class SplashButtonWidget extends StatelessWidget {
@@ -10,12 +11,12 @@ class SplashButtonWidget extends StatelessWidget {
       children: [
         GestureDetector(
           onTap: () {
-          /*   Navigator.push<void>(
+            Navigator.push<void>(
               context,
               MaterialPageRoute<void>(
-                builder: (BuildContext context) => const HomeScreen(),
+                builder: (BuildContext context) =>  HomeScreen(),
               ),
-            ); */
+            ); 
           },
           child: Container(
             alignment: Alignment.center,
