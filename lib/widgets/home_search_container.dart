@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 customHomeSearchContainer(BuildContext context) {
   return Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
+    padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 10.0),
     child: Row(
       children: [
         Container(
@@ -13,8 +13,8 @@ customHomeSearchContainer(BuildContext context) {
               boxShadow: [
                 BoxShadow(
                     color: Colors.grey.shade200,
-                    spreadRadius: 3.0,
-                    blurRadius: 4.0)
+                    spreadRadius: 2.0,
+                    blurRadius: 2.0)
               ],
               borderRadius: BorderRadius.circular(5.0)),
           child: Row(
@@ -40,7 +40,7 @@ customHomeSearchContainer(BuildContext context) {
           width: 10.0,
         ),
         Container(
-          width: MediaQuery.of(context).size.width * 0.15,
+          width: MediaQuery.of(context).size.width * 0.14,
           height: MediaQuery.of(context).size.height * 0.06,
           decoration: BoxDecoration(
               color: Colors.white,
