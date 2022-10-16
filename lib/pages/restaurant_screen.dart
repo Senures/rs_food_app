@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_rs_app/models/restaurant-chain-model.dart';
 import 'package:food_rs_app/models/restaurant-food-models.dart';
 import 'package:food_rs_app/widgets/restaurant-banner-img.dart';
+import 'package:food_rs_app/widgets/restaurant-bottom-card.dart';
 import 'package:food_rs_app/widgets/restaurant-chain-item.dart';
 import 'package:food_rs_app/widgets/restaurant-food-description.dart';
 import 'package:food_rs_app/widgets/restaurant_appbar.dart';
@@ -99,7 +100,12 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                   ),
                 ),
               ),
-            )
+            ),
+            Positioned(
+                right: 22.0,
+                left: 22.0,
+                bottom: 5.0,
+                child: restauranBottomCard(context))
           ],
         ),
       ),

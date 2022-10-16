@@ -6,7 +6,7 @@ restauranBottomCard(BuildContext context) {
     width: MediaQuery.of(context).size.width,
     height: 68.0,
     decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(20.0),
+      borderRadius: BorderRadius.circular(18.0),
       color: const Color(0xff010E16),
     ),
     child: Row(
