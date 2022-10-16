@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class RestaurantChainItem extends StatefulWidget {
-  final bool isSelected;
+
   final String foodType;
+  final Color color;
+  final Color textColor;
   RestaurantChainItem(
-      {Key? key, required this.isSelected, required this.foodType})
+      {Key? key, required this.foodType, required this.color, required this.textColor})
       : super(key: key);
 
   @override
@@ -22,12 +24,12 @@ class _RestaurantChainItemState extends State<RestaurantChainItem> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(3.0),
         border: Border.all(color: const Color(0xff010E16)),
-        color: widget.isSelected ? const Color(0xff010E16) : Colors.white,
+        color: widget.color,
       ),
       child: Text(
         widget.foodType,
         style: TextStyle(
-            color: widget.isSelected ? Colors.white : const Color(0xff010E16),
+            color: widget.textColor,
             fontSize: 13.0,
             fontWeight: FontWeight.w400),
       ),
